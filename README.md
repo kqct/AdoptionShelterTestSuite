@@ -2,9 +2,6 @@ A collection of JUnit 5 tests for Assignment 3.
 
 Feel free to add your own test cases! If you want, you can submit a pull request and I'll probably add your cases too.
 
-### If you are using Sasha's SpeedTester program:
-Please uncomment and change the relevant line in `build.gradle` to the location and name of the `RuntimeTester.jar` file.
-
 ## Installation
 ### IntelliJ
 To import the project from version control:
