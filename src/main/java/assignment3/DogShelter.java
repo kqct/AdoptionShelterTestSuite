@@ -85,13 +85,13 @@ public class DogShelter implements Iterable<Dog> {
 	}
 
 
-	class DogNode {
-		private Dog d;
-		private DogNode younger;
-		private DogNode older;
-		private DogNode parent;
+	public class DogNode {
+		public Dog d;
+		public DogNode younger;
+		public DogNode older;
+		public DogNode parent;
 
-		DogNode(Dog d) {
+		public DogNode(Dog d) {
 			this.d = d;
 			this.younger = null;
 			this.older = null;
