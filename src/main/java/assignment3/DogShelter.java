@@ -2,6 +2,7 @@ package assignment3;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class DogShelter implements Iterable<Dog> {
 	public DogNode root;

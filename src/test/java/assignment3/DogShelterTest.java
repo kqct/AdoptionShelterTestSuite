@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
 class DogShelterTest {
 
@@ -22,9 +21,11 @@ class DogShelterTest {
     Dog D = new Dog("Daisy", 7, 15, 12, 35.0);
 
     DogShelter shelter = new DogShelter(M);
+    DogShelter.DogNode node = shelter.new DogNode(M);
 
     @Test
     void shelter() {
+
     }
 
     @Test
