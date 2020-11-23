@@ -7,8 +7,7 @@ import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DogShelterTest {
-
+class DogShelterIteratorTest {
     Dog M = new Dog("Max", 11, 0, 2, 100.0);
 
     Dog R = new Dog("Rex", 8, 100, 5, 50.0);
@@ -23,41 +22,9 @@ class DogShelterTest {
     DogShelter shelter = new DogShelter(M);
     DogShelter.DogNode node = shelter.new DogNode(M);
 
-    @Test
-    void shelter() {
-
-    }
 
     @Test
-    void adopt() {
-    }
-
-    @Test
-    void testAdopt() {
-    }
-
-    @Test
-    void findOldest() {
-    }
-
-    @Test
-    void findYoungest() {
-    }
-
-    @Test
-    void findDogToAdopt() {
-    }
-
-    @Test
-    void budgetVetExpenses() {
-    }
-
-    @Test
-    void getVetSchedule() {
-    }
-
-    @Test
-    void iterateFunctionalityTest() {
+    void IterateFunctionalityTest() {
         Iterator<Dog> shelterIterator = shelter.iterator();
 
         assertTrue(shelterIterator.hasNext(), "Iterator should haveNext");
