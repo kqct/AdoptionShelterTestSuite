@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
 
 class DogShelterIteratorTest {
     Dog M = new Dog("Max", 11, 0, 2, 100.0);
@@ -27,9 +29,10 @@ class DogShelterIteratorTest {
     void IterateFunctionalityTest() {
         Iterator<Dog> shelterIterator = shelter.iterator();
 
-        assertTrue(shelterIterator.hasNext(), "Iterator should haveNext");
-        assertNotNull(shelterIterator.next(), "Iterator should return object of type Dog");
-        assertFalse(shelterIterator.hasNext(), "Iterator should not haveNext");
+        assertThat("Iterator should haveNext", shelterIterator.hasNext(), is(true));
+        assertThat("Iterator should return root object of type DogNode",
+                shelterIterator.next(), is(instanceOf(Dog.class)));
+        assertThat("Iterator should no longer haveNext", shelterIterator.hasNext(), is(false));
     }
 
     @Test
